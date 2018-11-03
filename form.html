@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form-lesson</title>
+</head>
+<body>
+    <h1>フォームレッスン</h1>
+    <p>以下のフォームを埋めてください。（※は必須項目）</p>
+    <form>
+    <div class="username">
+    <label>
+        ※ユーザー名:<input type="text" id="username" required> 
+    </label>
+    </div>
+    <div class="password">
+    <label>
+        ※パスワード（6文字以上）:<input type="password" id="password" minlength="6" required>
+    </label>
+    </div>
+    <div class="gender">
+        ※性別:<input type="radio" id="gender1" name="gender" required>
+             <label for="gender1">女性</label>
+             <input type="radio" id="gender2" name="gender" required>
+             <label for="gender2">男性</label>
+    </div>
+    <div class="birth-day">
+    <label>
+        ※生年月日:年:
+        <select name="birth-year" id="birth-year" required="required">
+            <option disabled selected value="">---</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+        </select>
+        月:
+        <select name="birth-month" id="birth-month" required>
+            <option disabled selected value="">---</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="12">12</option>
+        </select>
+        日:
+        <select name="birth-day" id="birth-day" required>
+            <option disabled selected value="">---</option>
+            <option value="1">1</option>
+            <option value="2">2</option>                
+            <option value="3">3</option>
+            <option value="31">31</option>
+        </select>
+    </label>
+    </div>
+    <div class="text">
+    <label for="text">備考欄:</label>
+    <div class="textarea">
+    <textarea id="text" cols="40" rows="15"></textarea>
+    </div>
+    </div>
+    <input type="submit">
+    </form>
+</body>
+</html>
